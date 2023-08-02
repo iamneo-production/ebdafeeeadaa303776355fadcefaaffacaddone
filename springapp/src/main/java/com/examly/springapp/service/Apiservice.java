@@ -28,7 +28,7 @@ public class Apiservice {
         return repo.findbyOrigin(foodOrigin);
     }
 
-    public Food getname (String foodName){
+    public Food getname (String foodName){   
         return repo.findbyName(foodName);
     }
 
