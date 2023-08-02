@@ -11,7 +11,7 @@ import com.examly.springapp.model.Food;
 @Repository
 public interface FoodRepo extends JpaRepository <Food , Integer> {
 
-    @Query(value = "SELECT * FROM Food u  WHERE u.food_Id = ?1", nativeQuery = true)
+    @Query(value = "SELECT * FROM Food u  WHERE u.foodid = ?1", nativeQuery = true)
     public Food findbyId(int foodId);
 
     @Query(value = "SELECT * FROM Food u WHERE u.food_origin = ?1", nativeQuery = true)
